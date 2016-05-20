@@ -1,0 +1,38 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="../js/jquery-1.11.1.min.js" charset="utf-8"></script>
+<script src="../js/bootstrap.min.js" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap-readable.min.css">
+
+<dom-module id="control-label">
+    <template>
+        <style>
+        </style>
+        
+        
+        <label for$="{{id}}" class$="{{elementstyle}}">{{title}}</label>     
+        
+    </template> 
+     
+    <script>
+        Polymer({
+            is: "control-label",
+            properties: {
+                title:{
+                    type: String,
+                    value: "Label"                    
+                },
+                elementstyle: {
+                    type: String,
+                    value: "control-label"
+                },
+                id: {
+                    type: String,
+                    value: "id"
+                }
+            }
+        });      
+
+    </script>
+</dom-module>
